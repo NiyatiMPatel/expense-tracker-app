@@ -1,0 +1,84 @@
+.items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  background-color: #9f48f5;
+  border: 1px solid #ffffff;
+  border-radius: 0.9rem;
+  color: #ffffff;
+}
+
+.title-amount-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 0.5rem;
+  grid-gap: 0.5rem;
+  flex: 1;
+}
+
+.title-amount-wrapper h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  flex: 1;
+}
+
+.title-amount-wrapper label {
+  background-color: #4826b9;
+  font-size: 1rem;
+  font-weight: 700;
+  border: 1px solid #ffffff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 6.5rem;
+  height: 6.5rem;
+  border: 1px solid #ffffff;
+  border-radius: 1rem;
+  color: #ffffff;
+  gap: 0.3rem;
+}
+
+.date-month {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.date-year {
+  font-size: 1rem;
+}
+
+.date-day {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.expense-fallback {
+  color: #ffffff;
+  text-align: center;
+}
+
+@media screen and (min-width: 580px) {
+  .title-amount-wrapper {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .title-amount-wrapper h2 {
+    margin: 0 1rem;
+  }
+
+  .title-amount-wrapper label {
+    font-size: 1.5rem;
+  }
+}
